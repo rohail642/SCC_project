@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCC</title>
+    <link rel="stylesheet" href="mainTrial.css">
+    <img src="https://cafs.org.sa/wp-content/uploads/2023/04/saudi_logo.png"
+    style="position:absolute;
+           width:-200px;
+           height:100px;
+           top:20px;
+           left:20px;">
+</head>
+<body>
+<header>
+    <h2 class="logo"></h2>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <select name="" id="">
+            <option value=""><a href="#"disabled>Machines</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+        </select>
+
+        <select name="" id="">
+            <option value=""><a href="#" disabled>Contacts</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+            <option value=""><a href="#">Link 1</a></option>
+        </select>
+        <button class="bthLogin-popup">Login</button>
+
+    </nav>
+</header>
+
+<div class="wrapper">
+    <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" id="username" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>
+                    Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="bth" onclick="func()">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(email == "rohail230@gmail.com" && password == "Rohailkhan1"){
+            alert ("login succesful!")
+            window.location.assign("machines.html")
+        }
+        else {
+            alert("Invalid Password or Username")
+        }
+        }
+        
+    </script>
+    
+
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>
+                    I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="bth">Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div> 
+</div>
+
+
+<script src="mainTrial.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
