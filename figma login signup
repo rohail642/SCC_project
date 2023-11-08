@@ -1,0 +1,7 @@
+<div style="width: 1440px; height: 1024px; position: relative; background: rgba(255, 255, 255, 0.85); border-radius: 45px; overflow: hidden">
+        <div style="width: 1028px; height: 1000px; left: 607px; top: 112px; position: absolute; background: #4EC68D; border-radius: 9999px"></div>
+        <img style="width: 915px; height: 968px; left: 720px; top: 163px; position: absolute; border-radius: 500px" src="https://via.placeholder.com/915x968" />
+        <div style="width: 381px; height: 381px; left: -112px; top: 790px; position: absolute; background: #4EC68D; border-radius: 9999px"></div>
+        <div style="width: 332px; height: 288px; left: -112px; top: 843px; position: absolute; background: #FFFBFB ; border-radius: 9999px;"></div>
+        <div style="width: 332px; height: 288px; background: #FFFBFB"></div>
+    </div>
